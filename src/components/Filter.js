@@ -2,12 +2,12 @@ import React from "react";
 
 function Filter({ onCategoryChange }) {
   return (
-    <div className="Filter">
-      <select onChange={(e) => onCategoryChange(e.target.value)}>
-        <option value="All">All</option>
+    <div>
+      <select name="filter" onChange={onCategoryChange}>
+        <option value="All">Filter by category</option>
         <option value="Produce">Produce</option>
         <option value="Dairy">Dairy</option>
-        <option value="Bakery">Bakery</option>
+        <option value="Dessert">Dessert</option>
       </select>
     </div>
   );
